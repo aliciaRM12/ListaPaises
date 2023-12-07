@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tv_pais"
+        android:text="País seleccionado"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre_pais"
+        android:background="@color/fondo"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pais" />
+
+    <TextView
+        android:id="@+id/tv_habitantes"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Número de habitantes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_pais" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/numero_habitantes"
+        android:background="@color/fondo"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_habitantes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
